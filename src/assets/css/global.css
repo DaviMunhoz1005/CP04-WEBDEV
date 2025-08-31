@@ -2,6 +2,7 @@
 @import url("form.css");
 @import url("filters.css");
 @import url("responsive.css");
+@import url("card_players.css");
 
 * {
     box-sizing:border-box
