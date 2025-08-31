@@ -4,8 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CP-WEBDEV</title>
+    <link rel="stylesheet" href="src/assets/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="card form-card">
+            <h2 id="form-title">Adicionar Jogadora</h2>
+            <form id="player-form">
+                <input type="hidden" id="player-id" />
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" required />
+
+                <label for="posicao">Posição</label>
+                <input id="posicao" type="text" placeholder="Ex: Meio-campo" required />
+
+                <label for="clube">Clube</label>
+                <input id="clube" type="text" placeholder="Ex: Corinthians" required />
+
+                <div class="row">
+                    <div class="col">
+                        <label for="gols">Gols</label>
+                        <input id="gols" type="number" min="0" value="0" />
+                    </div>
+                    <div class="col">
+                        <label for="assistencias">Assistências</label>
+                        <input id="assistencias" type="number" min="0" value="0" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="jogos">Jogos</label>
+                        <input id="jogos" type="number" min="0" value="0" />
+                    </div>
+                    <div class="col">
+                        <label for="favorita">Favorita</label>
+                        <select id="favorita">
+                            <option value="false">Não</option>
+                            <option value="true">Sim</option>
+                        </select>
+                    </div>
+                </div>
+
+                <label for="foto">Foto (URL)</label>
+                <input id="foto" type="text" placeholder="https://..." />
+
+                <div class="btns-form">
+                    <button class="btn" type="submit" id="save-btn">Salvar</button>
+                    <button class="btn secondary" id="clear-btn" type="button">Limpar</button>
+                </div>
+            </form>
+
+            <hr class="line-div">
+
+            <div class="small">Dica: clique em "Editar" em um card para carregar os dados no formulário.</div>
+        </div>
+
+        <div>
+            <div class="card players-grid-card">
+                <div class="list-header">
+                    <div>
+                        <h2 class="title-grid-players">Jogadoras</h2>
+                        <div class="small">Gerencie o time — criar, editar, favoritar, remover.</div>
+                    </div>
+
+                    <div class="controls">
+                        <div class="search">
+                            <input id="search" type="text" placeholder="Buscar por nome ou posição" />
+                            <button class="btn secondary" id="clear-search">Limpar</button>
+                        </div>
+
+                        <div class="filters">
+                            <select id="filter-clube">
+                                <option value="">Filtrar por time</option>
+                            </select>
+
+                            <button class="btn secondary" id="sort-name">Ordenar por nome</button>
+                            <button class="btn secondary" id="sort-pos">Ordenar por posição</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="players-area">
+                    <div class="grid" id="players-grid">
+
+                    </div>
+                    <div id="empty-state" class="empty" style="display:none">Nenhuma jogadora encontrada.</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
