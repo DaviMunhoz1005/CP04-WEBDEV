@@ -1,0 +1,88 @@
+label {
+    display: block;
+    font-size: 13px;
+    margin-top: 10px;
+    color: var(--font-color-ligth);
+}
+
+input[type="text"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 6px;
+    background: var(--bg-color-input-glass);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    color: var(--font-color-white);
+    font-size: 14px;
+}
+
+option {
+    color: black;
+}
+
+textarea {
+    min-height: 60px; 
+    resize: vertical;
+}
+
+.btns-form {
+    display: flex; 
+    gap: 8px; 
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.row {
+    display: flex; 
+    gap: 10px
+}
+
+.row .col {
+    flex: 1;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 12px;
+    background: var(--bg-btn-accent);
+    background-size: 300% 100%;
+    background-position: 0% 50%;
+    color: #092127;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    animation: gradientMove 1s alternate-reverse infinite;
+    transition: filter 0.3s ease;
+}
+
+@keyframes gradientMove {
+    0% { 
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+}
+
+.btn.secondary {
+    background: transparent;
+    color: var(--font-color-white);
+    border: 1px solid rgba(255,255,255, 0.2);
+    transition: ease-out border 300ms;
+}
+
+.btn.secondary:hover {
+    border: 1px solid rgba(255,255,255, 0.5);
+}
+
+.line-div {
+    border: none;
+    border-top: 2px solid rgba(255,255,255,0.08); 
+    margin: 14px 0
+}

@@ -1,0 +1,10 @@
+@media (max-width:920px) {
+    .container{
+        grid-template-columns: 1fr; 
+        padding-bottom: 30px;
+    }
+
+    .search input[type="text"] {
+        width: 140px;
+    }
+}
