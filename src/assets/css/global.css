@@ -1,0 +1,28 @@
+@import url("homepage.css");
+@import url("form.css");
+@import url("filters.css");
+@import url("responsive.css");
+
+* {
+    box-sizing:border-box
+}
+
+:root {
+    --bg: linear-gradient(180deg,#593662 0%, rgb(51, 27, 66) 100%);
+    --font-color-ligth: #96a1b1;
+    --bg-color-accent: #dd5ad7;
+    --bg-color-accent-2: #ef0be4;
+    --bg-btn-accent: linear-gradient(90deg, var(--bg-color-accent), var(--bg-color-accent-2), var(--bg-color-accent));
+    --font-color-white: #edf2f7;
+    --bg-color-input-glass: rgba(255,255,255,0.04);
+    --font-family-main: "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--font-color-white);
+    min-height: 100vh;
+    padding: 28px 0;
+    font-family: var(--font-family-main);
+}
