@@ -1,0 +1,75 @@
+.player-card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    border: 1px solid rgba(255,255,255,0.03);
+}
+
+.player-photo {
+    width: 72px;
+    height: 72px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    border: 1px solid rgba(255,255,255,0.04);
+}
+
+.player-body {
+    flex: 1;
+}
+
+.player-name {
+    font-weight: 700; 
+    font-size: 15px; 
+    margin-bottom: 4px;
+}
+
+.player-sub {
+    font-size: 13px;
+    color: var(--muted); 
+    margin-bottom: 8px;
+}
+
+.stats {
+    display: flex; 
+    gap: 8px; 
+    font-size: 13px; 
+    color: var(--muted); 
+    flex-wrap: wrap;
+}
+
+.stats span {
+    background: rgba(255,255,255,0.02); 
+    padding: 6px 8px; 
+    border-radius: 8px;
+}
+
+.card-actions {
+    display: flex; 
+    gap: 6px; 
+    align-items: center; 
+    margin-top: 8px;
+}
+
+.icon-btn {
+    background: transparent;
+    border: none;
+    color: var(--muted);
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.icon-btn:hover {
+    color: var(--white); 
+    background: rgba(255,255,255,0.02);
+}
+
+.fav {
+    color: #f6c85f;
+}
