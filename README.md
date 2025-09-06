@@ -2,7 +2,7 @@
 
 Checkpoint 4 para a disciplina de Web Development FIAP
 
-##### Para Acessar o site clique [aqui](https://davimunhoz1005.github.io/WEBDEV-CP1/Case-Social-Connect-main/).
+##### Para Acessar o site clique [aqui](https://davimunhoz1005.github.io/CP04-WEBDEV/).
 
 ## Sobre o Projeto
 
