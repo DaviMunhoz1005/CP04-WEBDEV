@@ -71,7 +71,7 @@ function placeholderPhoto() {
 }
 
 function toggleFavorite(id) {
-    const indexPlayer = players.findIndex(p=>p.id==id);
+    const indexPlayer = players.findIndex(player=>player.id==id);
     if(indexPlayer===-1) return;
     players[indexPlayer].favorita = !players[indexPlayer].favorita;
     saveToStorage(players);
@@ -163,7 +163,7 @@ function insertPlayer(payload) {
 
 function removePlayer(id){
     if(!confirm('Deseja realmente remover essa jogadora?')) return;
-    players = players.filter(p => p.id != id);
+    players = players.filter(player => player.id != id);
     saveToStorage(players);
     alert('Jogadora removida com sucesso!');
     renderControlsGridPlayers();

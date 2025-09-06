@@ -18,7 +18,7 @@ const seedData = async () => {
 
 export function genId() {
     const players = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
-    const maxId = players.length ? Math.max(...players.map(p => p.id || 0)) : 0;
+    const maxId = players.length ? Math.max(...players.map(player => player.id || 0)) : 0;
     return maxId + 1;
 }
 
